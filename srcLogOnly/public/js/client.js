@@ -77,7 +77,7 @@ var recordingStatus = document.getElementById('recordingStatus');
 function startRecording() {
   startButton.disabled = true;
   endButton.disabled = false;
-  recordingStatus.style.visibility = 'visible';
+  //recordingStatus.style.visibility = 'visible';
   initRecording();
 }
 
