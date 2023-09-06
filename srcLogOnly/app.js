@@ -59,7 +59,7 @@ io.on('connection', function (client) {
     });
 
     client.on('binaryData', function (data) {
-        // console.log(data); //log binary data
+        console.log(data); //log binary data
         if (recognizeStream !== null) {
             recognizeStream.write(data);
         }
