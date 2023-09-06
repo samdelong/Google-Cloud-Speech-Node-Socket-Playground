@@ -33,7 +33,7 @@ const constraints = {
 //================= RECORDING =================
 
 function initRecording() {
-  socket.emit('startGoogleCloudStream', ''); //init socket Google Speech Connection
+  //socket.emit('startGoogleCloudStream', ''); //init socket Google Speech Connection
   streamStreaming = true;
   AudioContext = window.AudioContext || window.webkitAudioContext;
   context = new AudioContext({
@@ -87,7 +87,7 @@ function stopRecording() {
   endButton.disabled = true;
   recordingStatus.style.visibility = 'hidden';
   streamStreaming = false;
-  socket.emit('endGoogleCloudStream', '');
+  //socket.emit('endGoogleCloudStream', '');
 
   let track = globalStream.getTracks()[0];
   track.stop();
